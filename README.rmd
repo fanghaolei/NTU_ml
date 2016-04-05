@@ -1,3 +1,10 @@
+---
+title: "NTU - Machine Learning"
+author: "Mike Fang"
+date: "04/05/2016"
+---
+
+
 This repo is for the [NTU machine learning class](https://class.coursera.org/ntumlone-003)
 on Coursera.
 
