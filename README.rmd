@@ -1,0 +1,5 @@
+This repo is for the [NTU machine learning class](https://class.coursera.org/ntumlone-003)
+on Coursera.
+
+Plot:
+![Comparision of different generalization bounds at very large N = 10000](https://raw.githubusercontent.com/fhlgood/NTU_ml/master/gbounds.png)
