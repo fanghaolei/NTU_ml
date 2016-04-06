@@ -17,15 +17,15 @@ p + stat_function(fun = rpb, geom = "line") + xlim(1000, 10000)
 
 # plot Parrondo and Van den Broek 
 pvdb <- function(x){
-    sqrt(1/x*(2*.05 + log(120) + 50*log(2*x)))
+    1/x +sqrt(1+x*(log(120) + 50*log(2*x)))/x # root of the equation
 }
 p + stat_function(fun = pvdb, geom = "line") + xlim(1000, 10000)
 
 # plot Devroye
 devr <- function(x){
-    sqrt(1/(2*x)*(4*.05*1.05 + log(80) + 100*log(x)))
+    1/(x-2) + sqrt(4*(1-log(80)-100*log(x)) + 2*x)/(2*x-4)
 }
-p + stat_function(fun = devr, geom = "line") + xlim(1000, 10000)
+p + stat_function(fun = devr, geom = "line") + xlim(1, 10000)
 
 # plot variant VC bound
 vvc <- function(x){
